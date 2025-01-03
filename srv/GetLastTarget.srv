@@ -1,0 +1,6 @@
+# Request: No request parameters
+---
+# Response: Two floating-point numbers for the last target coordinates
+float64 x
+float64 y
+

@@ -1,0 +1,11 @@
+<launch>
+    <!-- Launch Robot in Gazebo -->
+    <include file="$(find robot_description)/launch/sim.launch" />
+
+    <!-- Start Action Client Node -->
+    <node name="action_client_node" pkg="part1" type="action_client_node" output="screen"/>
+
+    <!-- Start Service Node -->
+    <node name="target_server" pkg="part1" type="target_server" output="screen"/>
+</launch>
+
